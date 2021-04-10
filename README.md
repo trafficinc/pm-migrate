@@ -56,3 +56,26 @@ $query2 = "ALTER TABLE users ADD COLUMN password VARCHAR(15) AFTER user_name;";
 (new Migrate(new Config()))->query($query2);
 
 ```
+OR
+```php
+
+<?php
+
+use App\Config\Config;
+use App\Commands\Migrate;
+
+$migrate = new Migrate(new Config());
+
+$query1 = "ALTER TABLE roles ADD COLUMN role_name VARCHAR(15) AFTER type;";
+
+$migrate->query($query1);
+
+$query2 = "ALTER TABLE users ADD COLUMN user_name VARCHAR(150) AFTER email;";
+
+$migrate->query($query2);
+
+$query2 = "ALTER TABLE users ADD COLUMN password VARCHAR(15) AFTER user_name;";
+
+$migrate->query($query2);
+
+```
