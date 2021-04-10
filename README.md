@@ -10,11 +10,11 @@ How to Use
 
 2.) Edit the `example.config`, fill in your config values and save the file as `.config`
 
-3.) Add new migration: php pm-migrate/migrate.php migrate:add [migration-name-without-spaces]
+3.) Add new migration: `php pm-migrate/migrate.php migrate:add [migration-name-without-spaces]`
 
 4.) Open/Edit the migration file [migrations/migrate-000x-name.php] with needed migration SQL code.
 
-5.) To migrate to the latest version: php pm-migrate/migrate.php migrate
+5.) To migrate to the latest version: `php pm-migrate/migrate.php migrate`
 
 Running `migrate` will create a .version file that will track your migration versions. You can also go to the help menu `php pm-migrate/migrate.php help` for more options.
 
