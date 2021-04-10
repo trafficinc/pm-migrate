@@ -1,0 +1,5 @@
+/vendor
+.version
+.config
+psalm.xml
+*.txt
