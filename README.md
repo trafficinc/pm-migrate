@@ -6,7 +6,7 @@ PM Migrate is an easy to use PHP/MySQL migrations library for those who want to 
 How to Use
 ==========
 
-1.) Git Clone or Download this project into your webroot. (Or same level as `artisan` in Laravel)
+1.) Git Clone or Download this project into your project root. (Or same level as `artisan` in Laravel)
 
 2.) Edit the `example.config`, fill in your config values and save the file as `.config`
 
